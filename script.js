@@ -44,7 +44,7 @@ function intializematrix(rows1,columns1,rows2,columns2,type)
         for (let j = 0; j < columns1; j++)
             {
                 
-            columns.push(parseInt(matrixa.rows[i].cells[j].querySelector("textarea").value));
+            columns.push(parseFloat(matrixa.rows[i].cells[j].querySelector("textarea").value));
             }
     A.push(columns);   
     }
@@ -53,7 +53,7 @@ function intializematrix(rows1,columns1,rows2,columns2,type)
     let columns=[];
     for (let j = 0; j < columns2; j++) 
         {
-        columns.push(parseInt(matrixb.rows[i].cells[j].querySelector("textarea").value));        
+        columns.push(parseFloat(matrixb.rows[i].cells[j].querySelector("textarea").value));        
          }
     B.push(columns);
 }
